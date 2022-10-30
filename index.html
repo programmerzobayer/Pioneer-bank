@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+  <title>pionner bank</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<section id="loginArea">
+    <div class="container-xl">
+    <div class="row">
+        <div class="images text-center">
+        <img src="./kisspng-pioneer-corporation-cdj-logo-audio-5ae6f1be222015.7874439315250846061398.png" alt="">
+        </div>
+        <div class="logIn">
+            <h5 id="logTitle">Log In Your Account</h5>
+            <input  type="email" name="" id="logEmail" placeholder="Type Your E-mail">
+            <input type="password" name="" id="logPass" placeholder="Type Your password">
+            <button id="loginBtn">Log In</button>
+        </div>
+
+    </div>
+</div>
+</section>
+<section id="accountDetiels">
+   <div class="container-xl">
+    <!--first row-->
+    <div class="row">
+    <div class="col-md-4">
+        <div class="deposit shows">
+            <h5>Deposit</h5>
+            <h1>$ <span id="curentDeposit">00</span></h1>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="balance shows">
+            <h5>Balance</h5>
+            <h1>$ <span id="curentBalance">100</span></h1>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="withdraw shows">
+            <h5>Withdraw</h5>
+            <h1>$ <span  id="curentWithdraw">00</span></h1>
+        </div>
+    </div>
+
+   
+     <!--first row-->
+       
+   </div>
+       <div class="row">
+        <div class="col-md-6">
+            <!--deposit input-->
+            <div class="deposit-balance def">
+             <h5>Deposit Balance</h5>
+             <input type="text" name="" id="depInput" placeholder="$ You Want To Deposit"><br>
+             <button id="depositBtn">Deposit</button>
+            </div>
+             <!--deposit input-->
+           </div>
+           <div class="col-md-6">
+            <!--withdraw input-->
+                <div class="withdraw-balance def">
+                    <h5>Withdraw Balance</h5>
+                    <input type="text" name="" id="withInput"
+                    placeholder="$ You Want To Withdraw"><br>
+                    <button id="withdrawBtn">Withdraw</button>
+                </div>
+                <!--withdraw input-->
+           </div>
+       </div>
+</div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

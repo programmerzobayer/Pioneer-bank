@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#accountDetiels{
+    display: none;
+}
+.logIn{
+padding: 100px 30px;
+box-shadow: 4px 4px 8px rgb(180, 199, 247);
+background: #ddd;
+width: 90%;
+margin: auto;
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+}
+#logTitle{
+text-align: center;
+position: relative;
+top: -40px;
+font-size: 30px;
+text-shadow: 2px 2px 3px rgb(250, 250, 250);
+color:#b33939;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+}
+#loginArea{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+input{
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #b33939;  
+}
+img{
+    width: 100%;
+}
+.images  img{
+width: 30%;
+margin-top: -200px;
+}
+#loginBtn{
+    padding: 8px 20px;
+    border: none;
+    background: #b33939;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+#loginBtn:focus{
+    border: none !important;
+    outline: none !important;
+}
+input:focus{
+    outline: none;
+}
+#logPass{
+    margin: 20px 0;
+} 
+.shows{
+    border-radius: 6px;
+    padding: 25px;
+    margin-top: 40px;
+    color: white;
+}
+.deposit{
+    background: slateblue;
+    margin-right: 10px;
+}
+.balance{
+background: orange;
+margin-right: 10px;
+}
+.withdraw{
+background: lightsalmon;
+}
+.deposit-balance{
+    box-shadow: 4px 4px 8px rgb(180, 199, 247);
+    padding: 30px;
+    margin: 30px 0 ;
+    border-radius: 6px;
+    border: 1px solid slateblue;
+}
+.withdraw-balance{
+    box-shadow: 4px 4px 8px rgb(180, 199, 247);
+    padding: 30px;
+    margin: 30px 0 ;
+    border-radius: 6px;
+    border: 1px solid lightsalmon;
+}
+#withInput, #depInput{
+    padding: 6px 14px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid slateblue;
+}
+
+#withdrawBtn ,#depositBtn{
+    background: slateblue;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 20px;
+    color: white;
+    cursor: pointer;
+}
+#withdrawBtn{
+    background: lightsalmon;
+}
+#withInput{
+    border: 1px solid lightsalmon;
+}
+#withdrawBtn ,#depositBtn:focus{
+    border: none !important;
+    outline: none !important;
+}
+.def h5{
+color: grey;
+font-weight: 5000;
+}
+
+@media (max-width:768px){
+    .logIn{
+        padding:30px 20px;
+    } 
+    #logTitle{
+        position: relative;
+        font-size: 20px;
+      top: -10px;
+        }
+        #logPass{
+            margin: 10px 0;
+        }
+        input{
+            padding: 6px 20px;
+             
+        }
+        .images  img{
+            width: 50%;
+            margin-top: -100px;
+            }
+            body{
+                background: white;
+            }
+            .shows{
+                margin: 10px 0;
+                padding: 30px;
+                
+            }
+            .withdraw-balance{
+             margin: 10px 0;
+             padding: 14px;
+            }
+            .deposit-balance{
+                margin: 10px 0;
+                padding: 14px;
+            }
+}
